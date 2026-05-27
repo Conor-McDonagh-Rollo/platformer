@@ -1,22 +1,24 @@
 [gd_scene format=3 uid="uid://d3rrjdrle8fs7"]
 
-[ext_resource type="Texture2D" uid="uid://cav3aoalxsxr1" path="res://icon.svg" id="1_8afob"]
 [ext_resource type="Script" uid="uid://bdhw3j01h2h3h" path="res://scripts/player/player.gd" id="1_gmlin"]
 [ext_resource type="Texture2D" uid="uid://dvunemxgfbk5l" path="res://assets/background.jpg" id="2_dovo2"]
+[ext_resource type="Texture2D" uid="uid://cwga055fw0hse" path="res://assets/player.png" id="2_gmlin"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
-size = Vector2(136, 128)
+size = Vector2(60, 134)
 
 [node name="player" type="CharacterBody2D" unique_id=722074811]
 script = ExtResource("1_gmlin")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1590248227]
+position = Vector2(1, 9)
 shape = SubResource("RectangleShape2D_dovo2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1403313291]
-texture = ExtResource("1_8afob")
+scale = Vector2(0.20725389, 0.20725389)
+texture = ExtResource("2_gmlin")
 
-[node name="background" type="Sprite2D" parent="Sprite2D" unique_id=82231482]
+[node name="background" type="Sprite2D" parent="." unique_id=82231482]
 z_index = -5
 position = Vector2(-12.000122, -130.5)
 scale = Vector2(0.99166656, 0.9916667)
