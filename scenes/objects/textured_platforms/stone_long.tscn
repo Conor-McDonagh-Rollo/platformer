@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bby75p4v3w3qv"]
+
+[ext_resource type="Texture2D" uid="uid://ctmry6ec3v7g7" path="res://assets/platforms/rock.png" id="1_gqceh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ecu4"]
+size = Vector2(750, 111)
+
+[node name="Grass" type="Node2D" unique_id=1263448163]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=334039026]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=904707744]
+position = Vector2(1, 0.5)
+shape = SubResource("RectangleShape2D_1ecu4")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=294784842]
+position = Vector2(0.49999332, 2.0000043)
+scale = Vector2(1.1179105, 0.56435645)
+texture = ExtResource("1_gqceh")
